@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Zoobits</title>
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="boot-loader" role="status" aria-live="polite" aria-label="Loading Zoobits">
+    <div class="bl-card">
+      <div class="bl-cover-wrap">
+        <img class="bl-cover" src="cover.jpg" alt="Zoobits" draggable="false">
+      </div>
+      <div id="bl-bar-wrap" class="bl-bar-wrap" aria-hidden="true">
+        <div id="bl-bar-fill" class="bl-bar-fill"></div>
+      </div>
+      <div class="bl-status">
+        <span id="bl-label">LOADING</span>
+        <span id="bl-pct">0%</span>
+      </div>
+    </div>
+  </div>
+  <div id="app">
+    <div id="lm-top">
+      <div id="lm-top-inner">
+        <img id="lm-logo" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          data-ui-sprite="logo_zoobits.png" alt="Zoobits" role="button" tabindex="0" aria-label="Home"
+          draggable="false">
+        <button id="lm-settings" aria-label="Settings"><img
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-ui-sprite="PictoIcon_Setting_1.Png" alt="" draggable="false"></button>
+      </div>
+    </div>
+    <div id="stage">
+      <div id="main-col">
+        <div id="title-row">
+          <!-- Animal name for the current clip (English). -->
+          <div id="world-progress"></div>
+
+          <!-- HINT button, and NEXT once the level is finished. -->
+          <div id="cta-slot">
+            <button id="hint-btn" class="cute-img-btn hidden" aria-label="Hint">
+              <img class="cute-btn-img"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                data-ui-sprite="hint_btn_cute.png" alt="Hint" draggable="false">
+              <span id="hint-text" class="sr-only">HINT</span>
+            </button>
+            <button id="next-btn" class="cute-img-btn hidden" aria-label="Next level">
+              <img class="cute-btn-img"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                data-ui-sprite="next_btn_cute.png" alt="Next level" draggable="false">
+              <span id="next-text" class="sr-only">NEXT</span>
+            </button>
+          </div>
+        </div>
+        <div id="board-wrap">
+          <canvas id="board"></canvas>
+          <div id="board-input"></div>
+          <img id="tutor-hand" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-ui-sprite="Hand.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="new-world">
+      <img id="new-world-icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        data-ui-sprite="tab_island_1.png" alt="">
+      <div id="new-world-text">NEW WORLD</div>
+    </div>
+
+    <div id="settings-modal">
+      <div id="settings-backdrop"></div>
+      <div id="settings-panel">
+        <button id="settings-close" aria-label="Close">×</button>
+        <div id="settings-title">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-ui-sprite="PictoIcon_Setting_1.Png" alt="" draggable="false">
+          <span>SETTINGS</span>
+        </div>
+        <button id="mute-btn" aria-label="Toggle sound">
+          <img id="sound-icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-ui-sprite="PictoIcon_Sound_On.Png" alt="">
+        </button>
+        <div id="settings-credits">
+          <strong>Music</strong><br>
+          "Beach Party" Kevin MacLeod (incompetech.com)<br>
+          Licensed under Creative Commons: By Attribution 4.0 License<br>
+          http://creativecommons.org/licenses/by/4.0/
+          <div id="settings-brand">
+            <img id="tapwap-icon" src="ui/tapwap_logo.png" alt="tapwap.com" draggable="false">
+            <span id="tapwap-copy">
+              Copyright &copy; <a href="https://tapwap.com" target="_blank" rel="noopener">tapwap.com</a><br>
+              All rights reserved.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="level-menu" aria-hidden="true">
+      <div id="lm-tabs" role="tablist" aria-label="Worlds"></div>
+      <div id="level-menu-inner"></div>
+    </div>
+  </div>
+
+  <video id="hidden-video" loop muted playsinline autoplay preload="auto"></video>
+  <audio id="bgm" loop preload="auto">
+    <source src="sounds/Beach_Party.ogg" type="audio/ogg">
+  </audio>
+  <audio id="sfx-victory" preload="auto" src="sounds/victory.mp3"></audio>
+
+  <script src="save.js"></script>
+  <script src="data.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>

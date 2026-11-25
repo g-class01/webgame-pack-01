@@ -1,0 +1,25 @@
+{
+  "title": "2048",
+  "published_by": "Gabriele Cirulli",
+  "is_mobile": true,
+  "width": 960,
+  "height": 600,
+  "genres": [
+    "puzzle",
+    "matching",
+    "merge",
+    "kids"
+  ],
+  "tags": [
+    "numbers",
+    "sliding",
+    "merge",
+    "logic",
+    "brain"
+  ],
+  "excerpt": "Slide numbered tiles across a 4x4 grid and merge matching pairs to double their value. Reach the legendary 2048 tile, chase a higher score than ever, and undo your last five moves whenever a plan goes wrong.",
+  "description": "2048 is the classic sliding number puzzle that starts with just two tiles and a simple promise: double your way to the 2048 tile. Every swipe pushes all the tiles in one direction, and whenever two tiles with the same number collide they merge into one of twice the value. The board fills up fast, so every move is a trade-off between chasing a big merge and keeping space open for the next tile. A New Game button resets the board instantly, a counter tracks your best score across sessions, and the built-in Undo button lets you take back up to five moves when a gamble does not pay off. It is easy to learn in seconds, endlessly replayable, and works just as well with a keyboard on desktop as it does with a swipe on a phone.",
+  "instructions": "Use the arrow keys or WASD to slide the tiles, or swipe in any direction on a touch screen. Press R to restart. Click Undo to take back your last move.",
+  "embed_url": "http://localhost:8098/",
+  "primary_image": "http://localhost:8098/cover.jpg"
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Zoobits — Animal Puzzle",
+  "published_by": "tapwap.com",
+  "is_mobile": true,
+  "width": 960,
+  "height": 600,
+  "genres": [
+    "puzzle",
+    "matching",
+    "animal",
+    "kids"
+  ],
+  "tags": [
+    "jigsaw",
+    "animals",
+    "rotation",
+    "kids",
+    "relaxing"
+  ],
+  "description": "Zoobits is a gentle jigsaw puzzle built around thirty short animated clips of adorable animals. Each level hands you a scrambled picture and asks you to rebuild it one square at a time. Early boards are a simple 3x3, but the grid grows to 4x4, 5x5, 6x6 and finally a demanding 7x7 as you travel from Grassland through Underground, Mountain and Sky down to the Undersea world. Some levels let you swap tiles, others spin individual squares a quarter turn, and the hardest combine both rules at once. A hint button appears whenever you stall, quietly demonstrating the next correct move so nobody gets stuck.",
+  "instructions": "Tap two tiles to swap them, drag a tile onto another to swap, or tap a single tile to turn it a quarter turn. Press HINT for a guided step.",
+  "embed_url": "http://localhost:8099/index.html",
+  "primary_image": "http://localhost:8099/cover.jpg"
+}
